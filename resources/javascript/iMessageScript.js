@@ -212,7 +212,6 @@ function responsiveChatPush(element, sender, origin, date, message) {
 		{
 			document.getElementsByTagName("title")[0].innerText = "(" + unread + ") Chat Client";
 			document.getElementById("favicon").href = "resources/other/icon-unread.ico";
-			_csharpjavascript.messagesUnread(unread, sender, date, message);
 		}
 		var options = { body: message, icon: "resources/other/icon.ico", onClick: function(event){ window.focus(); }, tag: "Chat Client" };
 		var alertNotification = new Notification("Chat Client - " + sender, options);
